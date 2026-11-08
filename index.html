@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Diseño y creación de páginas web para negocios, emprendimientos y tiendas. Solicita tu cotización por WhatsApp.">
+<title>WebPro | Páginas web para tu negocio</title>
+<style>
+:root{--navy:#08152f;--blue:#1769ff;--cyan:#31d6ff;--yellow:#ffd43b;--ink:#12213d;--muted:#61708b;--bg:#f5f8ff;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}
+header{background:rgba(8,21,47,.97);color:white;position:sticky;top:0;z-index:10;box-shadow:0 5px 25px #07142a22}
+.nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:900;font-size:1.25rem;letter-spacing:-.5px}.brand span{color:var(--cyan)}
+nav{display:flex;gap:25px;align-items:center;font-size:.94rem}nav a{color:#eaf1ff}nav a:hover{color:var(--yellow)}
+.menu{display:none;background:none;border:0;color:white;font-size:1.7rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--yellow);color:#101d37;font-weight:800;padding:13px 21px;border-radius:12px;border:0;cursor:pointer;transition:.2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 9px 24px #ffd43b55}.btn.blue{background:var(--blue);color:white}.btn.outline{background:transparent;border:1px solid #b9c9e8;color:white}
+.hero{background:radial-gradient(circle at 80% 20%,#174b9d 0,transparent 32%),linear-gradient(125deg,#07132b,#102c5b 65%,#0b1b3a);color:white;padding:92px 0 84px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:50px}.eyebrow{display:inline-block;color:var(--cyan);font-weight:800;letter-spacing:1.5px;text-transform:uppercase;font-size:.78rem}
+h1{font-size:clamp(2.5rem,5vw,4.6rem);line-height:1.05;letter-spacing:-2px;margin:16px 0 20px}h1 span{color:var(--yellow)}.hero p{font-size:1.12rem;color:#d6e3ff;max-width:580px}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}.note{font-size:.83rem!important;color:#aebfe0!important;margin-top:18px}
+.hero-art{min-height:340px;display:grid;place-items:center;position:relative}.glow{position:absolute;width:310px;height:310px;border-radius:50%;background:#1672ff55;filter:blur(50px)}
+.browser{position:relative;width:min(100%,440px);background:white;border-radius:18px;overflow:hidden;box-shadow:0 25px 70px #0008;transform:rotate(2deg)}
+.browser-top{height:34px;background:#eaf0fb;display:flex;align-items:center;gap:6px;padding:0 13px}.dot{width:8px;height:8px;border-radius:50%;background:#9aa9c2}
+.mock-site{padding:22px;color:#172b50;background:linear-gradient(145deg,#fff,#eaf4ff);min-height:265px}.mock-nav{display:flex;justify-content:space-between;font-size:11px;font-weight:800}.mock-title{font-size:28px;font-weight:900;line-height:1.05;margin:36px 0 10px}.mock-title span{color:#1769ff}.mock-copy{font-size:11px;color:#64748b}.mock-cta{display:inline-block;background:#1769ff;color:white;padding:8px 13px;border-radius:7px;font-size:10px;margin-top:14px}.mock-cards{display:flex;gap:9px;margin-top:24px}.mock-card{height:62px;flex:1;border-radius:9px;background:linear-gradient(135deg,#d8e8ff,#8cbcff)}
+section{padding:78px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 40px}.section-head .eyebrow{color:var(--blue)}h2{font-size:clamp(2rem,3.5vw,2.8rem);line-height:1.15;letter-spacing:-1px;margin:10px 0 12px}.section-head p{color:var(--muted);margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:white;border:1px solid #e5ebf5;border-radius:18px;padding:25px;box-shadow:0 10px 30px #12213d08}.icon{width:48px;height:48px;border-radius:14px;background:#eaf2ff;display:grid;place-items:center;font-size:1.5rem}.card h3{margin:15px 0 7px}.card p{color:var(--muted);font-size:.95rem;margin:0}
+.portfolio{background:#edf3ff}.portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.project{background:white;border-radius:18px;overflow:hidden;border:1px solid #dce6f7;box-shadow:0 12px 30px #102c5b0c}.project-preview{height:190px;padding:18px;display:grid;place-items:center}.preview-one{background:linear-gradient(135deg,#102c5b,#2378ff)}.preview-two{background:linear-gradient(135deg,#f7d7b2,#f28a52)}.preview-three{background:linear-gradient(135deg,#d9f4e8,#48a88a)}
+.preview-window{width:88%;height:145px;border-radius:10px;background:#fff;box-shadow:0 10px 25px #07142a33;padding:13px;color:#14213b;font-size:10px}.pv-head{display:flex;justify-content:space-between;font-weight:900}.pv-big{font-size:20px;font-weight:900;line-height:1.1;margin-top:22px}.pv-line{height:6px;width:65%;background:#dce7f6;border-radius:5px;margin-top:8px}.pv-button{height:15px;width:65px;border-radius:4px;background:#1769ff;margin-top:12px}.project-info{padding:19px}.project-info h3{margin:0 0 5px}.project-info p{margin:0;color:var(--muted);font-size:.9rem}.demo-label{display:inline-block;font-size:.7rem;font-weight:800;color:#174da8;background:#eaf2ff;border-radius:20px;padding:4px 9px;margin-bottom:8px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:step}.step{padding:10px 15px}.number{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--blue);color:white;font-weight:900}.step h3{margin:12px 0 5px}.step p{color:var(--muted);margin:0}
+.cta{background:linear-gradient(120deg,#0a1b3d,#12499a);color:white;text-align:center;border-radius:26px;padding:55px 25px}.cta p{color:#d7e5ff;max-width:620px;margin:0 auto 24px}
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:35px;align-items:start}.contact-info{background:#0b1b3a;color:white;border-radius:20px;padding:30px}.contact-info p{color:#d1def5}.contact-line{padding:12px 0;border-top:1px solid #ffffff20}.form{background:white;padding:28px;border:1px solid #e5ebf5;border-radius:20px;box-shadow:0 10px 30px #12213d08}.form label{display:block;font-weight:700;font-size:.9rem;margin:12px 0 5px}.form input,.form textarea,.form select{width:100%;padding:13px;border:1px solid #d6dfed;border-radius:10px;font:inherit;background:#fbfcff}.form textarea{min-height:110px;resize:vertical}.form button{width:100%;margin-top:18px}
+footer{background:#07132b;color:#b9c8e2;padding:28px 0;text-align:center;font-size:.88rem}.foot-brand{color:white;font-weight:900}
+.whatsapp{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;background:#20c76a;color:white;display:grid;place-items:center;font-size:1.7rem;box-shadow:0 8px 25px #07142a55;z-index:20}
+@media(max-width:800px){.hero-grid,.contact-grid{grid-template-columns:1fr}.hero{padding:65px 0}.hero-art{min-height:280px}.cards,.portfolio-grid,.steps{grid-template-columns:1fr 1fr}nav{display:none;position:absolute;top:74px;left:0;right:0;background:#08152f;padding:20px;flex-direction:column}.nav.open nav{display:flex}.menu{display:block}.nav .btn{display:none}}
+@media(max-width:540px){.cards,.portfolio-grid,.steps{grid-template-columns:1fr}section{padding:58px 0}.hero-art{min-height:240px}.browser{transform:none}.actions .btn{width:100%}}
+</style>
+</head>
+<body>
+<header><div class="container nav" id="nav">
+  <a class="brand" href="#inicio">Web<span>Pro</span> Studio</a>
+  <nav><a href="#servicios">Servicios</a><a href="#ejemplos">Ejemplos</a><a href="#proceso">Cómo trabajamos</a><a href="#contacto">Contacto</a></nav>
+  <a class="btn" href="#contacto">Solicitar cotización</a>
+  <button class="menu" aria-label="Abrir menú" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+</div></header>
+<main>
+<section class="hero" id="inicio"><div class="container hero-grid">
+ <div><span class="eyebrow">Diseño web para emprendedores</span>
+ <h1>Tu negocio merece una página <span>que destaque.</span></h1>
+ <p>Diseñamos páginas web modernas para que presentes tus productos, muestres tus servicios y tus clientes puedan encontrarte en Internet.</p>
+ <div class="actions"><a class="btn" href="#contacto">Quiero mi página web →</a><a class="btn outline" href="#ejemplos">Ver ejemplos</a></div>
+ <p class="note">Cuéntanos tu idea y solicita una cotización sin compromiso.</p></div>
+ <div class="hero-art"><div class="glow"></div><div class="browser"><div class="browser-top"><i class="dot"></i><i class="dot"></i><i class="dot"></i></div><div class="mock-site"><div class="mock-nav"><span>MI NEGOCIO</span><span>INICIO　 SERVICIOS　 CONTACTO</span></div><div class="mock-title">Haz crecer tu negocio <span>en Internet.</span></div><div class="mock-copy">Una presencia digital clara, moderna y hecha para ti.</div><div class="mock-cta">Conoce más</div><div class="mock-cards"><div class="mock-card"></div><div class="mock-card"></div><div class="mock-card"></div></div></div></div></div>
+</div></section>
+<section id="servicios"><div class="container"><div class="section-head"><span class="eyebrow">Lo que podemos crear</span><h2>Una web para cada tipo de negocio</h2><p>Elige el tipo de sitio que necesitas. Podemos conversar sobre tu idea y definir el alcance antes de comenzar.</p></div>
+<div class="cards">
+ <article class="card"><div class="icon">🏪</div><h3>Páginas para negocios</h3><p>Presenta tu empresa, horarios, ubicación, servicios y formas de contacto en un solo lugar.</p></article>
+ <article class="card"><div class="icon">🛍️</div><h3>Catálogos digitales</h3><p>Muestra tus productos con fotografías, descripciones y un botón para pedir información.</p></article>
+ <article class="card"><div class="icon">🛒</div><h3>Tiendas virtuales</h3><p>Organiza productos en una tienda en línea. Las funciones de pago y entrega se definen según el proyecto.</p></article>
+</div></div></section>
+<section class="portfolio" id="ejemplos"><div class="container"><div class="section-head"><span class="eyebrow">Ideas de diseño</span><h2>Ejemplos de páginas web</h2><p>Estas son maquetas demostrativas para que veas estilos posibles. No son trabajos de clientes ni sitios publicados.</p></div>
+<div class="portfolio-grid">
+ <article class="project"><div class="project-preview preview-one"><div class="preview-window"><div class="pv-head"><span>TECH STORE</span><span>Inicio　Productos</span></div><div class="pv-big">Tecnología para tu día a día</div><div class="pv-line"></div><div class="pv-button"></div></div></div><div class="project-info"><span class="demo-label">EJEMPLO DEMO</span><h3>Tienda de tecnología</h3><p>Diseño para mostrar productos y recibir consultas.</p></div></article>
+ <article class="project"><div class="project-preview preview-two"><div class="preview-window"><div class="pv-head"><span>CAFÉ CENTRAL</span><span>Menú　Visítanos</span></div><div class="pv-big">Un buen café cambia tu día</div><div class="pv-line"></div><div class="pv-button" style="background:#e97840"></div></div></div><div class="project-info"><span class="demo-label">EJEMPLO DEMO</span><h3>Restaurante o cafetería</h3><p>Menú, fotos, horarios y ubicación del negocio.</p></div></article>
+ <article class="project"><div class="project-preview preview-three"><div class="preview-window"><div class="pv-head"><span>FIT CLUB</span><span>Planes　Contacto</span></div><div class="pv-big">Empieza hoy tu mejor versión</div><div class="pv-line"></div><div class="pv-button" style="background:#329477"></div></div></div><div class="project-info"><span class="demo-label">EJEMPLO DEMO</span><h3>Servicios y emprendimientos</h3><p>Información de servicios, planes y formulario de contacto.</p></div></article>
+</div></div></section>
+<section id="proceso"><div class="container"><div class="section-head"><span class="eyebrow">Así de sencillo</span><h2>¿Cómo empezamos?</h2><p>Un proceso claro para convertir tu idea en un sitio web.</p></div>
+<div class="steps"><article class="step"><div class="number">1</div><h3>Cuéntanos tu idea</h3><p>Nos dices qué hace tu negocio y qué necesitas mostrar.</p></article><article class="step"><div class="number">2</div><h3>Definimos el proyecto</h3><p>Revisamos secciones, estilo, funciones, tiempos y cotización.</p></article><article class="step"><div class="number">3</div><h3>Diseñamos tu web</h3><p>Trabajamos en la propuesta y acordamos contigo los ajustes y la entrega.</p></article></div>
+</div></section>
+<section><div class="container"><div class="cta"><span class="eyebrow">Tu idea puede empezar hoy</span><h2>¿Listo para tener tu página web?</h2><p>Escríbenos y cuéntanos qué tipo de página necesitas. Te responderemos para conversar sobre tu proyecto.</p><a class="btn" href="https://wa.me/573122388508?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20una%20p%C3%A1gina%20web.">Hablar por WhatsApp</a></div></div></section>
+<section id="contacto"><div class="container"><div class="section-head"><span class="eyebrow">Hablemos de tu proyecto</span><h2>Contáctanos</h2><p>Completa tus datos y se abrirá WhatsApp con tu mensaje listo para enviar.</p></div>
+<div class="contact-grid"><div class="contact-info"><h3>¿Tienes una idea?</h3><p>Estamos listos para escuchar lo que necesitas para tu negocio.</p><div class="contact-line">📱 <strong>WhatsApp:</strong><br>312 238 8508</div><div class="contact-line">💻 <strong>Servicio:</strong><br>Diseño y creación de páginas web</div><div class="contact-line">✉️ <strong>Respuesta:</strong><br>Escríbenos para consultar disponibilidad</div></div>
+<form class="form" id="contactForm"><label for="name">Tu nombre</label><input id="name" required placeholder="¿Cómo te llamas?"><label for="business">Nombre de tu negocio (opcional)</label><input id="business" placeholder="Nombre de tu negocio"><label for="type">¿Qué página necesitas?</label><select id="type"><option>Página web para mi negocio</option><option>Catálogo digital</option><option>Tienda virtual</option><option>Quiero asesoría para elegir</option></select><label for="message">Cuéntanos un poco más</label><textarea id="message" placeholder="Describe brevemente tu idea..."></textarea><button class="btn blue" type="submit">Enviar por WhatsApp ↗</button></form>
+</div></div></section>
+</main>
+<footer><div class="container"><div class="foot-brand">WebPro Studio</div>Diseño de páginas web para negocios y emprendimientos.<br>WhatsApp: 312 238 8508<br><small>© <span id="year"></span> WebPro Studio. Personaliza este sitio antes de publicarlo.</small></div></footer>
+<a class="whatsapp" aria-label="Contactar por WhatsApp" href="https://wa.me/573122388508?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20una%20p%C3%A1gina%20web.">☏</a>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('contactForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const name=document.getElementById('name').value.trim();
+ const business=document.getElementById('business').value.trim();
+ const type=document.getElementById('type').value;
+ const message=document.getElementById('message').value.trim();
+ const text=`Hola, mi nombre es ${name}.${business?' Mi negocio es: '+business+'.':''} Estoy interesado/a en: ${type}. ${message?'Más detalles: '+message:''}`;
+ window.open('https://wa.me/573122388508?text='+encodeURIComponent(text),'_blank');
+});
+</script>
+</body></html>
